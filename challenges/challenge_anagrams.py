@@ -1,19 +1,17 @@
 def is_anagram(first_string, second_string):
     first = alphabetical_order(first_string)
     second = alphabetical_order(second_string)
-    check_string = first == second
 
-    return (first, second, check_string)
+    return (first, second, first == second)
 
 
 def alphabetical_order(string):
-    lowered_string = string.lower()
-    unsorted = list(lowered_string.strip())
+    lowered_string = teste.lower()
     sort_string = ""
 
-    while unsorted:
-        smallest = min(unsorted)
+    while lowered_string:
+        smallest = min(lowered_string)
         sort_string += smallest
-        unsorted.pop(unsorted.index(smallest))
+        lowered_string = lowered_string.replace(smallest, '', 1)
 
     return sort_string
