@@ -7,7 +7,7 @@ def find_duplicate(nums):
         for num in sort_list:
             if num not in newlist:
                 newlist.append(num)
-            else
+            else:
                 return num
 
     return False
