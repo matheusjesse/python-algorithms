@@ -1,18 +1,16 @@
 def find_duplicate(nums):
-    if not nums or len(nums) <= 1 or type(nums) is not list:
-        return False
+    if nums:
+        sort_list = nums.sort()
 
-    sort_list = nums.sort()
+        newlist = []
+        dupli = []
+        for num in sort_list:
+            if num not in newlist:
+                newlist.append(num)
+            if num not in dupli:
+                dupli.append(num)
 
-    newlist = []
-    dupli = []
-    for num in sort_list:
-        if num not in newlist:
-            newlist.append(num)
-        if num not in dupli:
-            dupli.append(num)
-
-        if len(dupli) > 0:
-            return dupli[0]
+            if len(dupli) > 0:
+                return dupli[0]
 
     return False
