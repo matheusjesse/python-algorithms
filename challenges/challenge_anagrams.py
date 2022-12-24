@@ -1,6 +1,8 @@
 def is_anagram(first_string, second_string):
-    first = ''.join(alphabetical_order(list(first_string.strip())))
-    second = ''.join(alphabetical_order(list(second_string.strip())))
+    one = first_string.lower()
+    two = second_string.lower()
+    first = ''.join(alphabetical_order(list(one.strip())))
+    second = ''.join(alphabetical_order(list(two.strip())))
 
     return (first, second, first == second)
 
