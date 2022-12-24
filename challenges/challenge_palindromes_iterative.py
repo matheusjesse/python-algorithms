@@ -1,10 +1,19 @@
 def is_palindrome_iterative(word):
     if word == "":
         return False
-# inversão palavras
-# https://pt.stackoverflow.com/questions/401489/inverter-as-palavras-de
-# -uma-frase-mantendo-a-ordem-delas-na-frase
-    if word == word[::-1]:
+
+    reverted_string = reverse_string(word)
+
+    if word == reverted_string:
         return True
     else:
         return False
+
+
+def reverse_string(string):
+    revert_string = ''
+    string_index = len(string) - 1
+    while string_index >= 0:
+        revert_string = revert_string + string[string_index]
+        string_index = string_index - 1
+    return revert_string
