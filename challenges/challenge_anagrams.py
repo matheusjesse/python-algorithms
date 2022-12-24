@@ -6,7 +6,7 @@ def is_anagram(first_string, second_string):
 
 
 def alphabetical_order(string):
-    lowered_string = teste.lower()
+    lowered_string = string.lower()
     sort_string = ""
 
     while lowered_string:
