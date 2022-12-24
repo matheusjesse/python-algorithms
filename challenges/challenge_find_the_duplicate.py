@@ -3,7 +3,6 @@ def find_duplicate(nums):
         return False
 
     newlist = []
-    dupli = []
 
     for num in nums:
         if num not in newlist:
