@@ -3,11 +3,14 @@ def find_duplicate(nums):
         return False
 
     newlist = []
-
+    dupli = []
     for num in nums:
         if num not in newlist:
             newlist.append(num)
         else:
-            return num
+            dupli.append(num)
+
+        if len(dupli) > 0:
+            return dupli[0]
 
     return False
