@@ -11,7 +11,7 @@ def alphabetical_order(string_list):
     if not string_list:
         return []
     return (alphabetical_order(
-            [x for x in string_list[1:] if x < string_list[0]])
+            [char for char in string_list[1:] if char < string_list[0]])
             + [string_list[0]] +
             alphabetical_order(
-            [x for x in string_list[1:] if x >= string_list[0]]))
+            [char for char in string_list[1:] if char >= string_list[0]]))
