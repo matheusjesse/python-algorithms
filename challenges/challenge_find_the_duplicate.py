@@ -1,5 +1,5 @@
 def find_duplicate(nums):
-    if nums:
+    if nums or len(nums) > 1:
         sort_list = sorted(nums)
 
         new_list = []
