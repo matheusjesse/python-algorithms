@@ -4,4 +4,4 @@ def is_palindrome_iterative(word):
 # inversão palavras
 # https://pt.stackoverflow.com/questions/401489/inverter-as-palavras-de
 # -uma-frase-mantendo-a-ordem-delas-na-frase
-    return word == word[::-1] 
+    return word == word[::-1]
