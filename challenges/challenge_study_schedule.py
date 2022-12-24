@@ -10,5 +10,5 @@ def study_schedule(permanence_period, target_time):
 
         if entry <= target_time <= exit:
             students_count += 1
-    
+
     return students_count
