@@ -5,6 +5,8 @@ def find_duplicate(nums):
         newlist = []
 
         for num in sort_list:
+            if type(num) is not int or num < 1:
+                return False
             if num not in newlist:
                 newlist.append(num)
             else:
