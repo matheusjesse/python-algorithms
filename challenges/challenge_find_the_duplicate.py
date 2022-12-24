@@ -9,7 +9,7 @@ def find_duplicate(nums):
     for num in sort_list:
         if num not in newlist:
             newlist.append(num)
-        else:
+        if num not in dupli:
             dupli.append(num)
 
         if len(dupli) > 0:
